@@ -37,7 +37,7 @@ static TaskHandle_t  _loopHandle;
 void initVariant() __attribute__((weak));
 void initVariant() { }
 
-#define LOOP_STACK_SZ       (256*4)
+#define LOOP_STACK_SZ       (512*4)
 #define CALLBACK_STACK_SZ   (256*3)
 
 static void loop_task(void* arg)
